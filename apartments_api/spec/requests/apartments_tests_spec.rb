@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "ApartmentsTests", type: :request do
+
   it "gets a list of apartments" do
       # Create a new apartment in the Test Database (not the same one as development)
       Apartment.create(apt_number: 77, address: "1810 Coolcrest ave", city: "Upland", zip: 91784, state: "CA", country: "United States of America the greatest country ever", name: "Joe", phone: "9099217713", contact: "Before 9pm")
