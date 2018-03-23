@@ -1,7 +1,10 @@
 class ApartmentsController < ApplicationController
+
+#before_action :authenticate_user only: :index
+
   def index
-  apartments = Apartment.all
-  render json: apartments
+      apartments = Apartment.all
+      render json: apartments
   end
 
   def create

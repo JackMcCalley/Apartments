@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 apartment_attributes = [
   {
-    id: 1,
     apt_number: 234,
     address: "1256 Redding way",
     city: "Upland",
@@ -19,7 +18,6 @@ apartment_attributes = [
     contact: "Before 9pm"
   },
   {
-    id: 2,
     apt_number: 77,
     address: "1810 Coolcrest ave",
     city: "Upland",
@@ -32,6 +30,18 @@ apartment_attributes = [
   }
 ]
 
+user_attributes = [
+    {
+        name: 'Jack',
+        email: 'jackmccalley@gmail.com',
+        password: 'secret'
+    }
+]
+
 apartment_attributes.each do |attributes|
   Apartment.create(attributes)
+end
+
+user_attributes.each do |attributes|
+    User.create(attributes)
 end
